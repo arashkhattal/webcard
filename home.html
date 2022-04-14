@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>D&H</title>
+</head>
+<body onload="myfunc()">
+    <div id="loading"></div>
+    <div class="container">
+        <div class="navbar">
+            <img src="/images/logo2.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#m-timmer">Time</a></li>
+                    <li><a href="#m-map">Location</a></li>
+                    <li><a href="#m-mail">Wishes</a></li>
+                    <li><a href="#m-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h2>DANISH <br>
+                    weds <br>HUSNA</h2>
+                <h3>May 22<sup>nd</sup> 2022</h3>
+                <p>Location : Noor Colony 3<sup>rd</sup> cross <br>Murdeshwer</p>
+            </div>
+            <div class="col-2">
+                <img src="/images/logo2.png" class="controller" data-aos="fade-up"
+                data-aos-duration="1000">
+                <div class="color-box" data-aos="fade-up"
+                data-aos-duration="3000"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========================================================== -->
+
+
+    <div class="coming-soon" id="m-timmer">
+        <div>
+            <h2 data-aos="zoom-out-up">DAYS UNTIL MISS HAJEEB TURNS TO MR'S HAJEEB</h2>
+            <div class="count-down">
+                <div class="container-day" data-aos="zoom-out-up">
+                    <h3 class="day">Time</h3>
+                    <h3>Days</h3>
+                </div>
+                <div class="container-hour" data-aos="zoom-out-up">
+                    <h3 class="hour">Time</h3>
+                    <h3>Hours</h3>
+                </div><div class="container-minute" data-aos="zoom-out-up">
+                    <h3 class="minute">Time</h3>
+                    <h3>Minutes</h3>
+                </div>
+                <div class="container-second" data-aos="zoom-out-up">
+                    <h3 class="second">Time</h3>
+                    <h3>Seconds</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================== -->
+
+    <div class="quiz-head" data-aos="fade-up"
+    data-aos-duration="1000">who knows the Bride & Groom Better</div>
+    <div class="start_quiz" >Start Quiz</div>
+
+    <div class="quiz-box inactive">
+        <h2 class="que_text"></h2>
+        <div class="options">
+        </div>
+        <div class="quiz-footer">
+            <div class="footer-left">
+                <span class="count_que"></span> of <span class="total_que"></span> Questions
+            </div>
+            <div class="footer-right">
+                <div class="next-btn inactive">Next Question</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="result-box inactive">
+        <h2>Result</h2>
+        <div class="result">
+            <h3 class="total-que">Total Questions : <span></span></h3>
+            <h3 class="right-ans">Right Answers : <span></span></h3>
+            <h3 class="wrong-ans">Wrong Answers : <span></span></h3>
+            <h3 class="percentage">Percentage : <span></span></h3>
+        </div>
+        <div class="result-footer">
+            <div class="again-quiz">Play Again</div>
+            <div class="exit">Exit</div>
+        </div>
+    </div>
+
+
+    <!-- ================================================================ -->
+
+
+    <div class="mapback" id="m-map" >
+        <h1 >Location</h1>
+        <div class="mapbox" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.5096499829356!2d74.49221481483443!3d14.106098890118888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc47c432a755e1%3A0xde0b0b1f327e58a6!2sDarul-Ashhad!5e0!3m2!1sen!2sin!4v1649318624165!5m2!1sen!2sin"
+             allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+ <!-- ================================================================ -->
+
+    <section class="w3l-simple-contact-form1" id="m-mail">
+        <div class="contact-form section-gap">
+          <div class="wrapper">
+            <div class="text-center">
+          </div>
+            <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+              <div class="form-mid">
+                <form action="javascript:sendmail(); reset();" method="post" >
+                  <div class="field">
+                    <div class="m-head" style="font-size: 20px;color:#2c3447" data-aos="fade-up"
+                    data-aos-duration="1000">Greeting To Bride & Groom</div>
+                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="" data-aos="fade-up"
+                    data-aos-duration="1000">
+                  </div>
+                  <div class="field">
+                    <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                      required="" data-aos="fade-up"
+                      data-aos-duration="1000">
+                  </div>
+                  <div class="field">
+                    <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Phone no."
+                      required="" data-aos="fade-up"
+                      data-aos-duration="1000">
+                  </div>
+                  <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                    required="" data-aos="fade-up"
+                    data-aos-duration="1000"></textarea>
+                  <button type="submit" class="btn btn-contact" data-aos="fade-up"
+                  data-aos-duration="1000">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+
+        <div class="mail" id="m-contact" >
+        <form data-aos="fade-up"
+        data-aos-duration="1000">
+        <h3 style="text-align:center; font-size: 35px">Contact Us</h3>
+        <div class="contact1" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="con">
+                <a href="tel:+919916889295" ><h4>Imtiyaz Hajeeb</h4></a>
+            </div>
+
+        </div>
+        <div class="contact2" data-aos="fade-up"
+        data-aos-duration="2000">
+            <div class="con">
+                <a href="tel:+919964015193" ><h4>Ashhad Raza</h4></a>
+            </div>
+        </div>
+        </form>
+    </div>
+
+      <!-- ====================================================== -->
+
+      <footer>
+          <div class="footer-content">
+              <h3>Design & Developed by <br> Arash khattal</h3>
+              <ul class="socials">
+                  <li><a href="https://in.linkedin.com/in/arash-khattal"><i class="fa fa-linkedin-square"></i></a></li>
+                  <li><a href="mailto:arashkhattal@gmail.com"><i class="fa fa-google"></i></a></li>
+                  <li><a href="https://www.instagram.com/arashkhattal/"><i class="fa fa-instagram"></i></a></li>
+
+              </ul>
+          </div>
+      </footer>
+
+    <script src="/js/main.js"></script>
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+                {
+                     menulist.style.maxHeight = "130px";
+                 }
+            else
+                {
+                    menulist.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    <!-- mail -->
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+
+     function sendmail(){
+
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+      var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mailrece22@gmail.com",
+                Password : "fshpnayqkrehlkjo",
+				To: "dmarriageh@gmail.com",
+				From: document.getElementById("Sender").value,
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+
+					}
+
+				}
+			);
+
+
+
+		}
+
+
+    </script>
+ </script>
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+    <script>
+        var preloader = document.getElementById("loading");
+        function myfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
+
+    <script src="/js/questions.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
