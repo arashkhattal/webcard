@@ -1,4 +1,4 @@
-# webcard
+# webcard for modern human
 
 ## <a href="https://arashkhattal.github.io/webcard/"> LIVE DEMO</a>
 
